@@ -1,3 +1,3 @@
 struct Toto {
-    let foo: String   
+    let foo: String
 }

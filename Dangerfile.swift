@@ -40,7 +40,6 @@ private func checkCommitsName() {
     }
 }
 
-
 private func validateRegex(input: String) -> Bool {
 
     let regexPattern = "^(feat|fix)\\([A-Z]{3,4}-[0-9]{1,4}\\):[a-zA-Z ]+$"

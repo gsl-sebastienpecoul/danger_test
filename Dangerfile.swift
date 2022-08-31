@@ -35,7 +35,7 @@ private func checkCommitsName() {
         if result {
           // message("Commits is valid")
         } else {
-            fail("Commit name should respect coventionnal commit convention\nActual commit format: \($0)\nExpected commit format: feat(MSRY-10): You commit message")
+            fail("Commit name should respect conventional commit convention\nActual commit format: **\($0)**\nExpected commit format: **feat(MSRY-10): You commit message**")
         }
     }
 }

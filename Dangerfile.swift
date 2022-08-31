@@ -54,19 +54,3 @@ private func validateRegex(input: String) -> Bool {
         
     return regex.firstMatch(in: input, range: range) != nil
 }
-
-/*
-private func extractTicketNumber(input: String) -> String? {
-     let regexPattern = "\\([A-Z]{3,4}-[0-9]{1,4}\\)"
-
-    guard let regex = try? NSRegularExpression(pattern: regexPattern, options: [])
-    else { return nil }
-        
-    // That uses the utf16 count to avoid problems with emoji and similar unicodes
-    let range = NSRange(location: .zero, length: input.utf16.count)
-        
-    guard let result = regex.firstMatch(in: input, range: range) else { return nil }
-
-    return input.substring(with: result.range)
-}
-*/

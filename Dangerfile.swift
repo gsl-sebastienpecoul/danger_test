@@ -20,11 +20,6 @@ private func checkCommitsName() {
     let commitsName = danger.git.commits.map(\.message)
     commitsName.forEach {
 
-/*
-        if let ticketNumber = extractTicketNumber(input: $0) {
-            message(ticketNumber)
-        }*/
-
         // Ignore these prefix, since convention is less strictier on theses
         if $0.starts(with: "chore") { return }
 
